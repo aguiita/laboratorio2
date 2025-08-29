@@ -56,8 +56,13 @@ print("Dimensiones del volumen:", volumen.shape)
 
 
 #creo como una grilla de coordenadas de los puntos en 3d
+#me genera los indices de mi array, osea yo tengo mi array y con esto nombro mis voxeles con indices. 
+#me devuelve las coordenadas de cada posicion del array
 Z,Y,X= np.indices(volumen.shape) #me devuelve 3 arraays
-x=X.flatten()
+x=X.flatten() # para cada uno de estos arrays, hago un flatten para ""aplastarlo"
+#y paso de tener los indices de mi array,a tener un vector lineal ordenado,
+#esscomo que lo baja a una dimension, un vector, una lista
+# ssi tengo ([[123],[456]]), lo convierte en [123456]
 y=Y.flatten()
 z=Z.flatten()
 #flatten lo que hace es convertir la matriz en un vector,lo aplasta
@@ -99,7 +104,7 @@ fig = plt.figure(figsize=(10, 8)) # 10 x 8 pulgadas
 ax=fig.add_subplot(111, projection='3d')
 # 111 significa 1 fila, 1 columna, 1er subplot
 # projection='3d' es para que sea 3d      
-
+# el scatter me dibuja losp puntos, pone puntos en las coordenada que les digo, como q me içubica losp untos
 ax.scatter(X, Y, Z)          # dibuja los puntos
 ax.set_xlabel("Eje X")       # etiqueta del eje X
 ax.set_ylabel("Eje Y")       # etiqueta del eje Y
