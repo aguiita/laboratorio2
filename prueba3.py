@@ -76,6 +76,7 @@ z=Z.flatten()
 #coords[0].shape   # (2, 3, 4)
 #coords[0].flatten().shape  # (24,), te da una lista con valores, lista lineal.
 
+# scaterr necesita listas 1d de coordenadas para graficar
 
 
 #puedo graficar con 
