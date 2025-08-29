@@ -52,6 +52,7 @@ volumen = np.stack(imagenes, axis=0)
 #el npstack lo que hace es tomar cada matriz de la lista y las apila en un nuevo eje
 #osea si tengo 100 imagenes de 200x200, me queda un array de 100x200x200
 print("Dimensiones del volumen:", volumen.shape)
+#el volumen.shape me da las dimensiones del array, osea me da la cantidad de elementos.
 
 
 #creo como una grilla de coordenadas de los puntos en 3d
