@@ -20,6 +20,8 @@ ruta_imagenes= "mondea3d/"
 #igual ya son todos png
 archivos=sorted(glob.glob(os.path.join(ruta_imagenes, "*.png")))
 # os.path.join("mondea3d/", "*.png") en esa carpeta busca todo lo que termine en .png
+#el glob me busca archivos q coincidan con el patron q le dpoy y el ospathjoin me construye rutas de una carpeta
+# lo podria sacar tmb, pero es como q me evita problemas con ios y windows
 
 
 #printeo la cantidad y el primero para probar
