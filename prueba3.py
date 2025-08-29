@@ -90,8 +90,16 @@ C=C[::factor ]
 # me quedaria : [0,1,2,3,4,5,6,7,8,9][::3] → [0,3,6,9]
 
 # ahora con mi array 3d, hago mi figura 3d
+#con pltfigure creo mi ""hoja""
+#el subplot es como mi cuadro de dibujo
 fig = plt.figure(figsize=(10, 8)) # 10 x 8 pulgadas 
 ax=fig.add_subplot(111, projection='3d')
 # 111 significa 1 fila, 1 columna, 1er subplot
 # projection='3d' es para que sea 3d      
+
+ax.scatter(X, Y, Z)          # dibuja los puntos
+ax.set_xlabel("Eje X")       # etiqueta del eje X
+ax.set_ylabel("Eje Y")       # etiqueta del eje Y
+ax.set_zlabel("Eje Z")       # etiqueta del eje Z
+ax.set_title("Reconstrucción 3D")  # título del gráfico
 
