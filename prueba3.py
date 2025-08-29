@@ -103,3 +103,4 @@ ax.set_ylabel("Eje Y")       # etiqueta del eje Y
 ax.set_zlabel("Eje Z")       # etiqueta del eje Z
 ax.set_title("Reconstrucción 3D")  # título del gráfico
 
+plt.show()
